@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CRUD JS</title>
+</head>
+
+<body>
+    <form onsubmit="return salvarUsuario(event);">
+        <label><input type="number" name="id_serie" placeholder="#"></label><br>
+        <label><input type="text" name="nome_serie" placeholder="Nome da série:"></label><br>
+        <label><input type="text" name="sinopse" placeholder="Sinopse:"></label><br>
+        <label><input type="text" name="autores" placeholder="Autores:"></label><br><br>
+        <input type="submit" value="Salvar Usuário">
+    </form>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome da série</th>
+                <th scope="col">Sinopse</th>
+                <th scope="col">Autores</th>
+                <th colspan="2">Opções</th>
+            </tr>
+        </thead>
+        <tbody id="usuarios"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
