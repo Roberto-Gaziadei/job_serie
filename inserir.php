@@ -7,7 +7,7 @@ $serie = json_decode(file_get_contents("php://input"));
 $sql = "INSERT INTO serie 
         (nome_serie, sinopse, autores)
         VALUES 
-        ('$serie->nome', 
+        ('$serie->nome_serie', 
         '$serie->sinopse', 
         '$serie->autores')";
 
