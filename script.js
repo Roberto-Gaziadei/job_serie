@@ -24,6 +24,8 @@ function inserirserie(serie) {
     tdNome.innerHTML = serie.nome_serie; // Define o nome da série
     let tdSinopse = document.createElement('td'); // Cria uma célula para a sinopse
     tdSinopse.innerHTML = serie.sinopse; // Define o texto da sinopse
+    let tdAutores = document.createElement('td'); // Cria uma célula para a Autores
+    tdAutores.innerHTML = serie.autores;
 
     // Botão para alterar a série
     let tdAlterar = document.createElement('td');
@@ -45,6 +47,7 @@ function inserirserie(serie) {
     tr.appendChild(tdId);
     tr.appendChild(tdNome);
     tr.appendChild(tdSinopse);
+    tr.appendChild(tdAutores);
     tr.appendChild(tdAlterar);
     tr.appendChild(tdExcluir);
 
@@ -86,6 +89,7 @@ function alterarserie(serie) {
         if (tr.children[0].innerHTML == serie.id_serie) { // Verifica se a linha corresponde ao ID da série
             tr.children[1].innerHTML = serie.nome_serie; // Atualiza o nome da série
             tr.children[2].innerHTML = serie.sinopse; // Atualiza a sinopse da série
+            tr.children[2].innerHTML = serie.autores;
         }
     }
 }

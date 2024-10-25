@@ -1,9 +1,9 @@
 <?php
 
-$id_usuario = $_GET['id_usuario'];
+$id_serie = $_GET['id_serie'];
 
 require_once "conexao.php";
 $conexao = conectar();
-$sql = "DELETE FROM usuario WHERE id_usuario = $id_usuario";
+$sql = "DELETE FROM serie WHERE id_serie = $id_serie";
 $retorno = executarSQL($conexao, $sql);
 echo json_encode($retorno);
