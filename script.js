@@ -10,13 +10,13 @@ function listarTodos() {
         headers: { 'Content-Type': "application/json; charset=UTF-8" } // Define o cabeçalho para JSON
     })
     .then(response => response.json()) // Converte a resposta para JSON
-    .then(series => series.forEach(serie => inserirserie(serie))) // Envia cada série para a função de inserção na tabela
+    .then(serie => serie.forEach(serie => inserirserie(serie))) // Envia cada série para a função de inserção na tabela
     .catch(error => console.log("Erro ao listar séries:", error)); // Exibe erros no console, se houver
 }
 
 // Função para inserir uma série na tabela HTML
 function inserirserie(serie) {
-    let tbody = document.getElementById('serie'); // Seleciona o elemento da tabela
+    let tbody = document.getElementById('id_serie'); // Seleciona o elemento da tabela
     let tr = document.createElement('tr'); // Cria uma nova linha de tabela
     let tdId = document.createElement('td'); // Cria uma célula para o ID
     tdId.innerHTML = serie.id_serie; // Define o ID da série
