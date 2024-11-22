@@ -17,7 +17,7 @@
         <div class="col s6  m3 center-align"> </div>
 
         <div class="row">
-            <div class="col s6 m6">
+            <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/outer.jpg">
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="col s6 m6">
+            <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/stranger.webp">
@@ -46,7 +46,7 @@
         <div class="col s6  m3 center-align"> </div>
 
         <div class="row">
-            <div class="col s6 m6">
+            <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/loki.webp">
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="col s6 m6">
+            <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
                         <img src="img/suits.jfif">
